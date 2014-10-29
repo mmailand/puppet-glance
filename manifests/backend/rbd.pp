@@ -39,6 +39,7 @@ class glance::backend::rbd(
     'DEFAULT/rbd_store_user':         value => $rbd_store_user;
     'DEFAULT/rbd_store_pool':         value => $rbd_store_pool;
     'DEFAULT/rbd_store_chunk_size':   value => $rbd_store_chunk_size;
+    'GLANCE_STORE/stores':            value => 'glance.store.rbd.Store';
   }
 
   package { 'python-ceph':
